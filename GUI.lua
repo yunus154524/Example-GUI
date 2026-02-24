@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Tab = Instance.new("Frame")
@@ -20,7 +15,7 @@ local ToggleButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local UICorner_2 = Instance.new("UICorner")
 
---Properties:
+
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -30,7 +25,7 @@ Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.403035194, 0, 0.377450973, 0)
+Main.Position = UDim2.new(0.387150705, 0, 0.40196079, 0)
 Main.Size = UDim2.new(0, 533, 0, 304)
 
 Tab.Name = "Tab"
@@ -93,6 +88,7 @@ FETab.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FETab.BorderSizePixel = 0
 FETab.Position = UDim2.new(1.0196079, 0, -0.309523821, 0)
 FETab.Size = UDim2.new(0, 427, 0, 261)
+FETab.Visible = false
 
 FETestButton.Name = "FETestButton"
 FETestButton.Parent = FETab
@@ -135,10 +131,9 @@ ClientTestButton.Parent = ClientTab
 ClientTestButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ClientTestButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ClientTestButton.BorderSizePixel = 0
-ClientTestButton.Position = UDim2.new(-0.00468384055, 0, 0, 0)
-ClientTestButton.Size = UDim2.new(0, 429, 0, 261)
+ClientTestButton.Size = UDim2.new(0, 427, 0, 43)
 ClientTestButton.Font = Enum.Font.SourceSans
-ClientTestButton.Text = "Source Code     (Click)"
+ClientTestButton.Text = "Example"
 ClientTestButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 ClientTestButton.TextScaled = true
 ClientTestButton.TextSize = 14.000
@@ -149,7 +144,7 @@ ToggleFrame.Parent = ScreenGui
 ToggleFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ToggleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ToggleFrame.BorderSizePixel = 0
-ToggleFrame.Position = UDim2.new(0.523666978, 0, 0.113970585, 0)
+ToggleFrame.Position = UDim2.new(0.507782519, 0, 0.138480395, 0)
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = ToggleFrame
@@ -169,9 +164,9 @@ UICorner.Parent = ToggleButton
 
 UICorner_2.Parent = ToggleFrame
 
--- Scripts:
 
-local function CZRXP_fake_script() -- Tab.Script 
+
+local function WMQWUL_fake_script()
 	local script = Instance.new('Script', Tab)
 
 	local CloseButton = script.Parent.CloseButton
@@ -180,8 +175,8 @@ local function CZRXP_fake_script() -- Tab.Script
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(CZRXP_fake_script)()
-local function LSLNSUN_fake_script() -- Tabs.Script 
+coroutine.wrap(WMQWUL_fake_script)()
+local function CQNTAKI_fake_script() 
 	local script = Instance.new('Script', Tabs)
 
 	local FEButton = script.Parent.FE
@@ -202,12 +197,10 @@ local function LSLNSUN_fake_script() -- Tabs.Script
 	
 	
 end
-coroutine.wrap(LSLNSUN_fake_script)()
-local function RYYCDD_fake_script() -- Main.UIDrag 
+coroutine.wrap(CQNTAKI_fake_script)()
+local function BUGZUT_fake_script()
 	local script = Instance.new('LocalScript', Main)
 
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
 	
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -244,12 +237,10 @@ local function RYYCDD_fake_script() -- Main.UIDrag
 		end
 	end)
 end
-coroutine.wrap(RYYCDD_fake_script)()
-local function NBLTAH_fake_script() -- ToggleButton.UIDrag 
+coroutine.wrap(BUGZUT_fake_script)()
+local function OSUO_fake_script()
 	local script = Instance.new('LocalScript', ToggleButton)
 
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
 	
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -286,8 +277,8 @@ local function NBLTAH_fake_script() -- ToggleButton.UIDrag
 		end
 	end)
 end
-coroutine.wrap(NBLTAH_fake_script)()
-local function TGYLORW_fake_script() -- ToggleFrame.Script 
+coroutine.wrap(OSUO_fake_script)()
+local function KSCLPJ_fake_script()
 	local script = Instance.new('Script', ToggleFrame)
 
 	local gui = script.Parent
@@ -298,4 +289,4 @@ local function TGYLORW_fake_script() -- ToggleFrame.Script
 		main.Visible = not main.Visible
 	end)
 end
-coroutine.wrap(TGYLORW_fake_script)()
+coroutine.wrap(KSCLPJ_fake_script)()
